@@ -1,0 +1,91 @@
+"nadie puede arrancar el día con menos de MinLuka"
+
+Variables  
+
+• MinLuka
+∘ el umbral con que se hace un refill
+• numUsuarios
+∘ cada vez que entre un nuevo usuario este aumenta.
+• Metodo de redistribución (quitar a los ricos, a los que no lo usan, según reputación, para dar a los que menos tienen)
+∘ proporcional a lo que tienen
+∘ según un ranking (que depende de numUsuarios, alguien con menos de minluka no puede entrar en el ranking)
+∘ reputación influye
+• lukaInicial (con cuanto empieza cada uno de los usuarios)
+∘ determina la distribución de luka
+• totalLuka = 
+∘ lukaInicial * numUsuarios (depende del numUsuarios)
+∘ es un número clave porque da el promedio de luka por persona, asumimos que la distribución puede terminar en una ley de potencia, aunque el mecanísmo de distribución puede determinar la verdadera distribución.
+• etherStokeado
+∘ pagará los fee
+• power (Si alguien dona ether para respaldar los fees tiene
+∘ más minLuka
+∘ cuando le paguen luka una multiplicación, o cuando hay distribución tb reciban independiente del número de luka
+∘ inmunidad a re-distribución
+∘ reputación
+∘ usuarios verificados
+• ultima transacción (para saber quienes no lo transan)
+• id (para evitar que alguien se mande a ellos mismos utilizando varias cuentas)
+∘ uport
+∘ civic
+∘ alias
+∘ probar identidad
+• reputación (podría influir en la redistribución)
+∘ pageRank
+∘ likes
+• hora de pagó
+∘ se sugiere que sea alrededor de las 5am para que no se gasten las luka en la fiesta, o que la fiesta dure hasta las 5am
+
+Motivación
+
+Queremos que todo el mundo arranque el día con luka. Crear una comunidad de intercambio bajo ideales de Ingreso Básico Universal. 
+Luka es una dapp, es decir un contrato inteligente que puedes firmar sin costo alguno.
+Cuando te unes a la comunidad luka recibiras ____ luka que podras transar con cualquier usuario de luka. Si en la mañana tienes menos de ___ luka, no te preocupes te llenaremos tu saldo a ___. Este saldo sale de los más ricos.
+Luka promueve que el dinero circule. Y cuando el dinero circula la economía es más sana. 
+En luka los que tienen poquito utilizan su luka ya que al día siguiente les llega más. Los que más tienen la utilizan para que no se las quiten. 
+No promovemos la acumulación, más la circulación.
+No pretendemos remplazar el dinero, luka es solo una opción más.
+No es una moneda para hacerse rico,
+No es una pirámide.
+Es uan aplicación para que todos tengamos luka y así el poder de decir no a lo que no queremos hacer.
+Parte del problema con la pobreza es que no tenemos dinero para satisfacer las necesidades básicas.
+No es un subsidio.
+Es una economía paralela con reglas claras.
+no cuesta entrar. no pierdes nada.
+Está diseñada para ayudar a personas a salir de la pobreza.
+
+Un contrato inteligente en un blockchain te asegura que todas las transacciones son transparentes, que las reglas están claras y que no hay un humano corruptible.
+Los contratos inteligentes son incorruptibles.
+
+
+Especificaciones
+• los fee se pagan por el dapp
+∘ esto implica que tenemos que tener cierto tipo de donaciones que pueden ayudar a los miembros
+∘ si fuera el caso que los recursos se acaban tendríamos que cobrar a las personas.
+• podríamos hacer una nación de bitnation
+• hay variables que se podrían alterar con algún ente central (y esta es una decisión que debemos tomar), podría hacerse después de un tiempo prudente de prueba y de entender la economía.
+
+Dínamica
+• cada día a la hora específicada se hace la redistibución
+∘ es decir cada individuo con menos de MinLuka recibe MinLuka - saldo
+‣ podría haber usuarios que reciben más minLuka por ser superusuarios
+∘ Esto sale de los que mas tienen según el método de distribución que escojamos, y según variables como reputación, poder, ultimas transacciones
+‣ según ranking
+‣ o según saldo
+
+
+Otros
+• reportar personas que tienen doble cuenta
+• botón de donaciones
+∘ "luka paga gas por cada transaccion que se hace, también por la operación del contrato inteligente. Tus donaciones ayudan a que esto funcione. Dona y recibe beneficios"
+
+Beneficios de donar
+• eres un supertipo
+• más luka cada día
+• no te quitamos luka el día de la repartición
+• luka sin necesidad de tener un mínimo de luka
+
+FAQ
+• ¿por qué alguien rico quiere entrar?
+• ¿qué hace que los ricos deb la plata?
+∘ un smart contract
+• ¿Es legal?
